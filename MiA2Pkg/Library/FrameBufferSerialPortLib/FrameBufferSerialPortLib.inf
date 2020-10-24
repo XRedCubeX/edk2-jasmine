@@ -1,0 +1,30 @@
+[Defines]
+  INF_VERSION    = 0x00010005
+  BASE_NAME      = FrameBufferSerialPortLib
+  MODULE_TYPE    = BASE
+  VERSION_STRING = 1.0
+  LIBRARY_CLASS  = SerialPortLib
+
+[Sources.common]
+  FrameBufferSerialPortLib.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  ArmPkg/ArmPkg.dec
+  MiA2Pkg/MiA2Pkg.dec
+
+[LibraryClasses]
+  ArmLib
+  PcdLib
+  IoLib
+  HobLib
+  CompilerIntrinsicsLib
+  CacheMaintenanceLib
+
+[Pcd]
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
+  gMiA2PkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight
