@@ -7,15 +7,17 @@ Based on Danct12's port for Xiaomi Redmi Note 7 (lavender) (https://github.com/d
 What works:
 - Display
 - UEFI Shell
+- Clocks
+- eMMC
 
 What does not work:
-- Clocks
-- eMMC (SdccDxe requires Clocks)
+- Buttons
+- USB
 ...
 
 
 ## Building
-Tested on Arch Linux.
+Tested on Ubuntu WSL.
 
 First, clone EDK2.
 
