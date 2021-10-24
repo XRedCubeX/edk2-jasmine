@@ -8,7 +8,7 @@ What works:
 - Display
 - UEFI Shell
 - Clocks
-- eMMC
+- eMMC (Thanks to @serdeliuk)
 
 What does not work:
 - Buttons
